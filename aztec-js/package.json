@@ -1,0 +1,47 @@
+{
+  "name": "@poa/zklp-protocol",
+  "version": "0.1.0",
+  "description": "Zero-Knowledge Location Proofs (ZKLP) Protocol for Aztec Network",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [
+    "zklp",
+    "zero-knowledge",
+    "location-proofs",
+    "privacy",
+    "aztec",
+    "noir",
+    "zkp"
+  ],
+  "author": "POA Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/[user]/aztec-zklp-protocol.git"
+  },
+  "peerDependencies": {
+    "@aztec/aztec.js": "^0.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "prettier": "^3.0.0"
+  }
+}
