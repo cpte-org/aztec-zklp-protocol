@@ -1,0 +1,38 @@
+{
+  "name": "@poa/zklp-protocol",
+  "version": "1.0.0",
+  "description": "Zero-Knowledge Location Proofs (ZKLP) Protocol for Aztec Network - Privacy-preserving location attestation",
+  "type": "module",
+  "main": "./aztec-js/dist/index.js",
+  "types": "./aztec-js/dist/index.d.ts",
+  "scripts": {
+    "compile": "nargo compile",
+    "build": "nargo build && cd aztec-js && npm run build",
+    "test": "nargo test && cd aztec-js && npm test",
+    "clean": "rm -rf target aztec-js/dist deployments",
+    "sandbox:up": "docker compose up -d",
+    "sandbox:down": "docker compose down",
+    "sandbox:logs": "docker compose logs -f",
+    "deploy:sandbox": "AZTEC_ENV=sandbox npx ts-node scripts/deploy.ts",
+    "deploy:devnet": "AZTEC_ENV=devnet npx ts-node scripts/deploy.ts",
+    "codegen": "aztec codegen target --outdir src/artifacts"
+  },
+  "keywords": [
+    "aztec",
+    "noir",
+    "zkp",
+    "privacy",
+    "location",
+    "attendance",
+    "zero-knowledge"
+  ],
+  "author": "POA Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@aztec/aztec": "^4.0.4",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

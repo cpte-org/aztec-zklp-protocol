@@ -1,11 +1,8 @@
 [package]
-name = "aztec_zklp_protocol"
+name = "zklp_protocol"
+type = "contract"
 authors = ["POA Team"]
-compiler_version = ">=0.18.0"
-type = "lib"
+compiler_version = ">=1.0.0"
 
 [dependencies]
-aztec = { git="https://github.com/AztecProtocol/aztec-nr/", tag="#include_aztec_version", directory="aztec" }
-
-[toolchain]
-# Using latest stable Noir version compatible with Aztec
+aztec = { git = "https://github.com/AztecProtocol/aztec-nr/", tag = "v4.0.0-devnet.2-patch.1", directory = "aztec" }
